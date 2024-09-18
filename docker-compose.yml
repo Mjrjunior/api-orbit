@@ -1,0 +1,10 @@
+name: to-do-app
+services:
+  pg:
+    image: bitnami/postgresql:13.16.0
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mjr1504gm
+      POSTGRES_DB: todoapp
+    ports:
+      - "5432:5432"
